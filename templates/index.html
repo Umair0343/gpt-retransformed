@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>OpenAI API Demo</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .logo-container {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .logo-container img {
+        max-width: 150px; /* Adjust the size of the logo */
+        margin-bottom: 10px;
+        vertical-align: middle; /* Align the logo vertically with the text */
+      }
+      .logo-container h1 {
+        display: inline-block; /* Display the text inline with the logo */
+        margin: 0 10px; /* Add some space between the logo and text */
+        vertical-align: middle; /* Align the text vertically with the logo */
+      }
+      .button-container {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px; /* Rounded border */
+        border: 3px solid #03c3b6; /* 3px border */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .button-container h2 {
+        margin-top: 0;
+      }
+      .button-container p {
+        margin-bottom: 10px;
+      }
+      .button-container input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      .button-container input[type="submit"]:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo-container">
+        <img
+          src="{{ url_for('static', filename='media/openai_logo.png') }}"
+          alt="OpenAI Logo"
+        />
+        <h1>OpenAI API Demo Application</h1>
+        <img
+          src="{{ url_for('static', filename='media/hello.png') }}"
+          alt="Hello Image"
+        />
+      </div>
+      <h4>
+        The completions endpoint can be used to perform many tasks on a text,
+        including classification, generation, transformation, completion of
+        incomplete text, factual responses, and others.
+      </h4>
+      <form action="/prompt_design" method="GET">
+        <div class="button-container">
+          <h3>Design Your Own Prompt</h3>
+          <p>
+            The completions endpoint needs instructions in the form of a prompt
+            to process the request. Click the button below to design your own
+            prompt and get results from the OpenAI API.
+          </p>
+          <input type="submit" value="Completions" />
+        </div>
+      </form>
+      <form action="/specific_tasks" method="GET">
+        <div class="button-container">
+          <h3>Specific Tasks with Completions</h3>
+          <p>
+            The completion endpoint can perform tasks like sentiment analysis,
+            classification, translation, summarization, and text completion.
+            Click the button below to perform any of these operations and get
+            results from the OpenAI API.
+          </p>
+          <input type="submit" name="specific-tasks" value="Specific Tasks" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
