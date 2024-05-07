@@ -7,7 +7,7 @@ app = Flask(__name__)
 client = OpenAI(api_key="YOUR_API_KEY")
 
 # List of available models
-models = ["gpt-3.5-turbo", "gpt-3.5-turbo-0125", "gpt-3.5-turbo-1106"]
+models = ["gpt-3.5-turbo", "gpt-3.5-turbo-0125"]
 # operation = ["Sentiment analysis (Positive, negative or neutral)", "Text classification", "Translate English to French", "Summarize text", "Text completion"]
 
 @app.route("/results", methods=["GET"])
