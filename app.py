@@ -73,4 +73,5 @@ def specific_tasks():
     return render_template("specific_tasks.html", models=models)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    import os
+    app.run(debug=os.getenv('FLASK_DEBUG', 'False') == 'True')
