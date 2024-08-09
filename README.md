@@ -2,7 +2,8 @@
 This project is a Flask-based web application that leverages OpenAI's GPT-3.5-turbo models to perform various natural language processing tasks. Users can interact with the application through a web interface, where they can select a model, provide a prompt, and choose an operation (like sentiment analysis, text classification, translation, summarization, or text completion).
 
 Here is how the main window looks like:
-<img width="600" alt="Screenshot 2024-08-09 at 3 51 21 PM" src="https://github.com/user-attachments/assets/2f3d5fa1-8106-4409-9e9e-9ece8f99f34a">
+
+<img width="500" alt="Screenshot 2024-08-09 at 3 51 21 PM" src="https://github.com/user-attachments/assets/2f3d5fa1-8106-4409-9e9e-9ece8f99f34a">
 
 Clicking on the "Completions" button will take you to the next window in which you can design/write your prompt:
 <img width="500" alt="Screenshot 2024-08-09 at 3 56 45 PM" src="https://github.com/user-attachments/assets/72fc65fa-9d64-497e-a32d-f81542ac484d">
